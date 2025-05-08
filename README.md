@@ -42,6 +42,37 @@ Add `--export <file>` and `--format csv|json` to export results:
 python main.py --file targets.txt --export results.csv --format csv
 ```
 
+## Command Line Usage
+
+### Scan a single host
+```bash
+python main.py --target example.com:443
+```
+
+### Scan multiple hosts from a file
+```bash
+python main.py --file targets.txt
+```
+Where `targets.txt` contains one host per line, e.g.:
+```
+google.com:443
+example.com:443
+github.com:443
+```
+
+### Export results to CSV or JSON
+```bash
+python main.py --file targets.txt --export results.csv --format csv
+python main.py --file targets.txt --export results.json --format json
+```
+
+### Interactive mode (menu-driven)
+Just run:
+```bash
+python main.py
+```
+And follow the prompts.
+
 ## Requirements
 - Python 3.7+
 - See `requirements.txt` for dependencies
