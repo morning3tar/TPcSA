@@ -1,0 +1,6 @@
+rich
+cryptography
+pyOpenSSL
+questionary
+tabulate
+requests 
