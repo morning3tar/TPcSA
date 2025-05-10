@@ -1,5 +1,8 @@
 # TLS/PKI Certificate Scanner and Analyzer
 
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Python](https://img.shields.io/badge/python-3.7%2B-blue)
+
 A terminal-based Python tool to scan and analyze TLS/PKI certificates for single or multiple hosts, providing detailed certificate and TLS configuration information.
 
 ## Features
