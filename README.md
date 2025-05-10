@@ -8,7 +8,7 @@ A terminal-based Python tool to scan and analyze TLS/PKI certificates for single
 - Security analysis: expiration, weak algorithms, self-signed, hostname mismatch
 - TLS configuration analysis: supported protocols, cipher suites, forward secrecy
 - HTTP header checks: HSTS, HPKP
-- Reporting: summary tables, export to CSV/JSON, color-coded output
+- Reporting: summary tables, export to CSV/JSON/HTML/Markdown, color-coded output
 - Interactive or CLI-driven operation
 
 ## Usage
@@ -37,9 +37,12 @@ github.com:443
 ```
 
 ### 3. Export results
-Add `--export <file>` and `--format csv|json` to export results:
+Add `--export <file>` and `--format csv|json|html|md` to export results:
 ```bash
 python main.py --file targets.txt --export results.csv --format csv
+python main.py --file targets.txt --export results.json --format json
+python main.py --file targets.txt --export results.html --format html
+python main.py --file targets.txt --export results.md --format md
 ```
 
 ## Command Line Usage
@@ -60,10 +63,12 @@ example.com:443
 github.com:443
 ```
 
-### Export results to CSV or JSON
+### Export results to CSV, JSON, HTML, or Markdown
 ```bash
 python main.py --file targets.txt --export results.csv --format csv
 python main.py --file targets.txt --export results.json --format json
+python main.py --file targets.txt --export results.html --format html
+python main.py --file targets.txt --export results.md --format md
 ```
 
 ### Interactive mode (menu-driven)
