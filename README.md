@@ -48,32 +48,6 @@ python main.py --file targets.txt --export results.html --format html
 python main.py --file targets.txt --export results.md --format md
 ```
 
-## Command Line Usage
-
-### Scan a single host
-```bash
-python main.py --target example.com:443
-```
-
-### Scan multiple hosts from a file
-```bash
-python main.py --file targets.txt
-```
-Where `targets.txt` contains one host per line, e.g.:
-```
-google.com:443
-example.com:443
-github.com:443
-```
-
-### Export results to CSV, JSON, HTML, or Markdown
-```bash
-python main.py --file targets.txt --export results.csv --format csv
-python main.py --file targets.txt --export results.json --format json
-python main.py --file targets.txt --export results.html --format html
-python main.py --file targets.txt --export results.md --format md
-```
-
 ### Interactive mode (menu-driven)
 Just run:
 ```bash
